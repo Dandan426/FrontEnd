@@ -1,6 +1,6 @@
 // Declaração de variáveis
-let num1 = 20;
-let num2 = 15;
+let num1 = prompt("Digite um número");
+let num2 = prompt("Digite outro número");
 
 // Operações matemáticas
 let soma = num1 + num2
