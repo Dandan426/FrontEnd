@@ -1,5 +1,16 @@
-const nome = prompt("Digite seu nome")
-const idade = prompt("Digite sua idade")
+// Criando uma função
+function minhaFuncao(){
+    alert("Olá");
+}
 
-// console.log("Meu nome é " + nome + " e Minha idade é: " + idade + " Anos") // + é concatenando, ou seja, juntando os valores
-console.log(`Meu nome é: ${nome} e minha idade é: ${idade} Anos`)
+function meuNome(nome, idade) {
+    console.log(nome + idade);
+}
+
+// Chamando função
+meuNome("Daniela ", 16);
+meuNome("Angela ", 40);
+meuNome("Ademir ", 25);
+meuNome("Letty ", 3);
+
+// minhaFuncao();   
