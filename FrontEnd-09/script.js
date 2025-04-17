@@ -21,6 +21,37 @@ const cars = [
     }
 ]
 
+/* Criando uma função */
+function displayCars() {
+    // Variável
+    const cardList = document.querySelector("#card-list")
 
-console.log(cars[0].brand)
-console.log(cars[2].model)
+    cars.forEach((car) => {
+        console.log(car)
+        // Criamos um elemento div pelo JavaScript
+        const cardDiv = document.createElement("div")
+        // Criando uma classe css car
+        cardDiv.classList.add("car")
+
+        // Criando o modelo
+        const cardModel = document.createElement("h2")
+        cardModel.textContent = `${car.brand} ${car.model}`
+
+        // Criando o Ano 
+        const cardYear  = document.createElement("p")
+        cardYear.textContent = `Ano: ${car.year}`
+
+        cardDiv.appendChild(cardModel)
+        cardDiv.appendChild(cardYear)
+
+        cardList.appendChild(cardDiv)
+
+    })
+}
+
+// Chamar a função
+displayCars()
+
+
+
+
